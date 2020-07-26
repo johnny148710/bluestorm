@@ -1,0 +1,60 @@
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__featured-image-container {
+        height: 100vh;
+
+        h1 {
+            font-size: 4rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__title-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        @include media-breakpoint-down(md) {
+            width: 90%;
+        }
+
+        h1 {
+            font-weight: 100;
+            color: $white;
+        }
+    
+        p {
+            color: $white;
+        }
+
+        a {
+            color: $white;
+            background: $pink;
+            border-radius: 30px;
+            padding: 0.8rem 5rem;
+            font-weight: 100;
+            border: 1px solid transparent;
+
+            &:hover {
+                border-color: $pink;
+                background: transparent;
+                color: $pink;
+            }       
+        }
+    }
+
+    .mouse-icon {
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+    }
+}

@@ -1,0 +1,26 @@
+.services {
+    padding-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 2rem;
+    }
+
+    &__text-container {
+        padding: 1.5rem 0 2rem 0;
+    }
+
+    &__info-container {
+        h3 {
+            font-size: 1.5rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.2rem;
+            }
+        }
+        
+        p {
+            color: $grey;
+        }
+    }
+}
+

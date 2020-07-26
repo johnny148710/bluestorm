@@ -1,0 +1,32 @@
+@import "theme/theme_variables";
+
+@import "assets/bootstrap4";
+@import "understrap/understrap";
+
+// Any additional imported files //
+@import "theme/theme";
+
+// Assets
+@import "assets/font-awesome";
+@import "assets/slick";
+
+// Components
+@import "components/styling";
+@import "components/_header";
+@import "components/_hero";
+@import "components/_nav";
+@import "components/_services";
+@import "components/_layout";
+@import "components/_about";
+@import "components/_what-we-do";
+@import "components/_testimonial";
+@import "components/_blog";
+@import "components/_gravity";
+@import "components/_prices";
+@import "components/_footer";
+
+// Plugins
+@import "theme/contact-form7";
+
+// Woocommerce
+// @import "understrap/woocommerce";

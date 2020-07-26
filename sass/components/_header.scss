@@ -1,0 +1,21 @@
+.header-container {
+    transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+
+    &.nav-up {
+        opacity: 0;
+        z-index: -1;
+    }
+    
+    &.nav-down {
+        opacity: 1;
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(-20%,#000),to(rgba(0,0,0,0)));
+        background: linear-gradient(to bottom,#000 -20%,rgba(0,0,0,0) 100%);
+    }
+
+    &.mobile-menu-open {
+        background: $darkGrey;
+        height: 100%;
+    }
+}

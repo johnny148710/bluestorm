@@ -1,0 +1,50 @@
+.posts {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__image-container {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+
+        @include media-breakpoint-down(md) {
+            height: initial;
+        }
+    }
+
+    &__text-container {
+        h4 {
+            margin-top: 1rem;
+            height: 110px;
+
+            @include media-breakpoint-down(md) {
+                height: initial;
+                font-size: 1.2rem;
+                color: $grey;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+
+        p {
+            color: $grey;
+
+            i {
+                color: $purple;
+            }
+        }
+    }
+
+    .mobile-padding {
+        @include media-breakpoint-down(md) {
+            padding: 1rem;
+        }
+    }
+}
